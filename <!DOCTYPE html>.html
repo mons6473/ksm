@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Website with Ads</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex; /* 전체 페이지를 플렉스 컨테이너로 설정 */
+        }
+        #ads-banner {
+            width: 160px;
+            height: 2000px;
+            background-color: #fff; /* 광고 영역 배경 */
+            color: #000;
+            padding: 10px;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+        #ads-banner script {
+            display: block;
+            margin: 0 auto;
+        }
+        #content {
+            flex: 1; /* 남은 공간을 메인 콘텐츠가 차지하도록 설정 */
+            padding: 0 20px;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+        main {
+            padding: 2rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 160px); /* 광고 배너를 제외한 폭 */
+            left: 160px; /* 광고 배너의 위치를 피하도록 설정 */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 광고 배너 영역 -->
+    <div id="ads-banner">
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+        	new PartnersCoupang.G({"id":830008,"template":"carousel","trackingCode":"AF1126905","width":"160","height":"2000","tsource":""});
+        </script>
+    </div>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <div id="content">
+        <header>
+            <h1>Welcome to My Enhanced Website</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <!-- Home Section -->
+            <section id="home">
+                <h2>Home</h2>
+                <p>Welcome to the homepage of this website. Explore the sections to learn more!</p>
+                <ul>
+                    <li>Latest News</li>
+                    <li>Upcoming Events</li>
+                    <li>Popular Articles</li>
+                </ul>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a small team dedicated to creating amazing content for the web.</p>
+                <p>Our goal is to provide high-quality resources for learners, developers, and creators worldwide.</p>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or want to reach out, feel free to contact us:</p>
+                <address>
+                    Email: <a href="mailto:info@example.com" style="color: #ffcc00;">info@example.com</a><br>
+                    Phone: +1-234-567-8900<br>
+                    Address: 123 Main Street, Anytown, USA
+                </address>
+            </section>
+        </main>
+        <footer>
+            &copy; 2025 My Enhanced Website. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
